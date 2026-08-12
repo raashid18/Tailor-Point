@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tailor Point — Custom Men's Suits in Sonipat | Gohana Road</title>
+<meta name="description" content="Tailor Point on Gohana Road, Sonipat stitches custom men's suits, waistcoats and trousers, hand-finished since 2011. Call or WhatsApp to book a fitting.">
+<meta name="theme-color" content="#6b3a22">
+<meta property="og:title" content="Tailor Point — Custom Men's Suits, Sonipat">
+<meta property="og:description" content="Hand-finished custom suits on Gohana Road, Sonipat since 2011. Perfect fit, premium stitching, on-time delivery.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&auto=format&fit=crop">
+<meta property="og:type" content="business.business">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%236b3a22'/%3E%3Cpath d='M25 60 Q50 25 75 45' stroke='%23f5efe1' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='75' cy='45' r='5' fill='%23b0812f'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ============ RESET ============ */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  ul { list-style: none; }
+  button { font: inherit; cursor: pointer; }
+  input, textarea { font: inherit; }
+
+  /* ============ TOKENS ============ */
+  :root {
+    --bg: #f5efe1;
+    --bg-soft: #ede0c6;
+    --ink: #241a12;
+    --ink-muted: #5c4c3c;
+    --brand: #6b3a22;
+    --brand-dark: #4a2717;
+    --gold: #ac7f2e;
+    --border: #dccdac;
+    --card: #fbf7ec;
+    --whatsapp: #3f7d52;
+    --whatsapp-dark: #2f6140;
+    --shadow: rgba(36, 26, 18, 0.14);
+
+    --font-display: "Playfair Display", "Georgia", serif;
+    --font-body: "Outfit", "Segoe UI", sans-serif;
+
+    --container: 1200px;
+    --pad: clamp(20px, 5vw, 56px);
+    --section-pad: clamp(64px, 9vw, 120px);
+    --radius-sm: 4px;
+    --radius-md: 10px;
+    --radius-lg: 20px;
+  }
+
+  /* ============ BASE ============ */
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 { font-family: var(--font-display); color: var(--ink); line-height: 1.15; font-weight: 700; }
+  h2 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); }
+  h3 { font-size: clamp(1.15rem, 2vw, 1.4rem); }
+  p { color: var(--ink-muted); }
+  .container { max-width: var(--container); margin: 0 auto; padding: 0 var(--pad); }
+  section { padding: var(--section-pad) 0; position: relative; }
+
+  a:focus-visible, button:focus-visible, input:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 3px;
+  }
+
+  .skip-link {
+    position: absolute; left: -999px; top: 0;
+    background: var(--ink); color: var(--bg); padding: 12px 20px; z-index: 999;
+    border-radius: 0 0 var(--radius-sm) 0;
+  }
+  .skip-link:focus { left: 0; }
+
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-body); font-weight: 600; font-size: 0.78rem;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--brand);
+    margin-bottom: 14px;
+  }
+  .eyebrow::before {
+    content: ""; width: 20px; height: 2px; background: var(--gold); display: inline-block;
+  }
+
+  .section-head { max-width: 640px; margin-bottom: clamp(36px, 5vw, 60px); }
+  .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+  .section-head p { margin-top: 14px; font-size: 1.02rem; }
+
+  /* ============ SVG ICON HELPERS ============ */
+  .icon { width: 22px; height: 22px; flex-shrink: 0; }
+  .icon-line { fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .stitch-divider { width: 100%; max-width: 220px; height: 16px; color: var(--gold); opacity: 0.9; }
+  .stitch-divider.center { margin: 0 auto 22px; }
+  .stitch-divider line { stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+
+  /* ============ BUTTONS ============ */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    font-family: var(--font-body); font-weight: 600; font-size: 0.98rem;
+    padding: 14px 26px; border-radius: 8px; border: 1.5px solid transparent;
+    transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+    white-space: nowrap;
+  }
+  .btn .icon { width: 19px; height: 19px; }
+  .btn-whatsapp { background: var(--whatsapp); color: #fbf7ec; box-shadow: 0 8px 20px -8px rgba(63,125,82,0.55); }
+  .btn-whatsapp:hover { background: var(--whatsapp-dark); transform: translateY(-2px); }
+  .btn-outline { background: transparent; color: var(--ink); border-color: var(--ink); }
+  .btn-outline:hover { background: var(--ink); color: var(--bg); transform: translateY(-2px); }
+  .btn-outline.on-dark { color: var(--bg); border-color: var(--bg); }
+  .btn-outline.on-dark:hover { background: var(--bg); color: var(--ink); }
+  .btn-sm { padding: 10px 18px; font-size: 0.88rem; border-radius: 7px; }
+  .btn-block { width: 100%; }
+
+  .icon-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 42px; height: 42px; border-radius: 50%; flex-shrink: 0;
+    transition: transform 0.15s ease, filter 0.15s ease;
+  }
+  .icon-btn:hover { transform: translateY(-2px); }
+  .icon-btn.call { background: var(--brand); color: var(--bg); }
+  .icon-btn.wa { background: var(--whatsapp); color: var(--bg); }
+  .icon-btn .icon { width: 20px; height: 20px; }
+
+  /* ============ HEADER ============ */
+  .site-header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(245, 239, 225, 0.94); backdrop-filter: blur(6px);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .site-header.scrolled { border-bottom-color: var(--border); box-shadow: 0 6px 20px -14px var(--shadow); }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px var(--pad); max-width: var(--container); margin: 0 auto; }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .logo-mark { width: 40px; height: 40px; flex-shrink: 0; }
+  .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
+  .brand-name { font-family: var(--font-display); font-weight: 700; font-size: 1.28rem; letter-spacing: 0.01em; }
+  .brand-sub { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brand); font-weight: 600; }
+
+  .nav-links { display: none; align-items: center; gap: 30px; font-weight: 500; font-size: 0.95rem; }
+  .nav-links a { position: relative; padding: 4px 0; }
+  .nav-links a::after {
+    content: ""; position: absolute; left: 0; bottom: -2px; width: 0; height: 2px; background: var(--gold);
+    transition: width 0.2s ease;
+  }
+  .nav-links a:hover::after { width: 100%; }
+
+  .header-actions { display: flex; align-items: center; gap: 10px; }
+  .header-actions .btn { display: none; }
+  .hamburger {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 42px; height: 42px; border-radius: 8px; border: 1.5px solid var(--border);
+    background: var(--card); color: var(--ink);
+  }
+  .hamburger .icon-close { display: none; }
+  .hamburger[aria-expanded="true"] .icon-menu { display: none; }
+  .hamburger[aria-expanded="true"] .icon-close { display: block; }
+
+  .mobile-nav {
+    display: none; flex-direction: column; gap: 4px;
+    background: var(--card); border-bottom: 1px solid var(--border);
+    padding: 10px var(--pad) 22px;
+  }
+  .mobile-nav.open { display: flex; }
+  .mobile-nav a {
+    padding: 12px 6px; font-weight: 600; font-size: 1.02rem; border-bottom: 1px dashed var(--border);
+  }
+  .mobile-nav .mobile-cta { display: flex; gap: 10px; margin-top: 14px; }
+  .mobile-nav .mobile-cta .btn { flex: 1; }
+
+  /* ============ HERO ============ */
+  .hero { padding-top: clamp(40px, 6vw, 76px); padding-bottom: clamp(30px, 5vw, 50px); overflow: visible; }
+  .hero-grid { display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center; }
+  .hero-content { max-width: 620px; }
+  .hero-title { font-size: clamp(2.1rem, 5.4vw, 3.1rem); margin-bottom: 18px; }
+  .hero-title .accent { color: var(--brand); font-style: italic; }
+  .hero-value { font-size: clamp(1.05rem, 2vw, 1.2rem); color: var(--ink-muted); max-width: 480px; margin-bottom: 22px; }
+  .hero-proof {
+    display: inline-flex; align-items: center; gap: 10px; font-weight: 600; font-size: 0.92rem;
+    color: var(--brand); background: var(--card); border: 1px solid var(--border);
+    padding: 8px 16px 8px 10px; border-radius: 40px; margin-bottom: 30px;
+  }
+  .hero-proof .icon { width: 16px; height: 16px; }
+  .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 22px; }
+  .hero-micro { display: flex; align-items: center; gap: 8px; font-size: 0.88rem; color: var(--ink-muted); font-weight: 500; }
+  .hero-micro .icon { width: 16px; height: 16px; color: var(--gold); }
+
+  .hero-visual { position: relative; }
+  .hero-frame {
+    position: relative; border-radius: var(--radius-lg); overflow: hidden;
+    border: 6px solid var(--card); box-shadow: 0 30px 60px -24px var(--shadow);
+    aspect-ratio: 4/5;
+  }
+  .hero-frame img { width: 100%; height: 100%; object-fit: cover; }
+  .hero-badge {
+    position: absolute; bottom: -18px; left: -18px; z-index: 3;
+    background: var(--gold); color: var(--ink); width: 96px; height: 96px; border-radius: 50%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; font-family: var(--font-display); font-weight: 700; font-size: 0.85rem;
+    box-shadow: 0 14px 30px -12px var(--shadow); line-height: 1.15; border: 3px solid var(--bg);
+  }
+  .hero-badge span { display: block; font-family: var(--font-body); font-weight: 700; font-size: 1.35rem; }
+  .tape-ribbon { width: 100%; height: 26px; margin-top: 22px; border-radius: 4px; overflow: hidden; }
+
+  /* ============ TRUST STRIP ============ */
+  .trust-strip { background: var(--bg-soft); padding: clamp(44px, 6vw, 72px) 0; }
+  .trust-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .trust-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-md);
+    padding: 22px 18px; text-align: left;
+  }
+  .trust-num { font-family: var(--font-display); font-size: clamp(1.7rem, 3.6vw, 2.3rem); color: var(--brand); font-weight: 700; }
+  .trust-label { font-size: 0.85rem; color: var(--ink-muted); font-weight: 600; margin-top: 4px; }
+
+  /* ============ SERVICES ============ */
+  .services-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+  .service-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-md);
+    padding: 26px; display: flex; flex-direction: column; gap: 14px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .service-card:hover { transform: translateY(-4px); box-shadow: 0 18px 34px -20px var(--shadow); }
+  .service-card.featured { background: var(--brand); border-color: var(--brand); }
+  .service-card.featured h3, .service-card.featured .card-price { color: var(--bg); }
+  .service-card.featured p { color: #e6d9c8; }
+  .service-card.featured .card-icon { background: var(--gold); color: var(--brand-dark); }
+  .card-icon {
+    width: 52px; height: 52px; border-radius: 50%; background: var(--bg-soft); color: var(--brand);
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .card-icon .icon { width: 26px; height: 26px; }
+  .service-card h3 { margin-bottom: 2px; }
+  .service-card p { font-size: 0.93rem; flex-grow: 1; }
+  .card-price { font-family: var(--font-display); font-weight: 700; color: var(--brand); font-size: 1.08rem; }
+  .service-card .btn { margin-top: 4px; }
+
+  .nudge-card {
+    grid-column: 1 / -1; background: var(--ink); color: var(--bg); border-radius: var(--radius-md);
+    padding: 26px; display: flex; flex-direction: column; gap: 14px; justify-content: center;
+  }
+  .nudge-card h3 { color: var(--bg); }
+  .nudge-card p { color: #cfc2b0; font-size: 0.93rem; }
+
+  /* ============ ABOUT ============ */
+  .about { background: var(--bg-soft); }
+  .about-grid { display: grid; grid-template-columns: 1fr; gap: 44px; align-items: start; }
+  .about-visual { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; position: relative; }
+  .avatar-circle {
+    width: 132px; height: 132px; border-radius: 50%; background: var(--brand);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-display); font-weight: 700; font-size: 2.6rem; color: var(--bg);
+    border: 5px solid var(--card); box-shadow: 0 20px 40px -18px var(--shadow); position: relative; z-index: 2;
+  }
+  .about-watermark { position: absolute; top: -30px; width: 220px; opacity: 0.5; color: var(--gold); z-index: 1; }
+  .about-name { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; }
+  .about-role { font-size: 0.85rem; color: var(--brand); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+  .about-text p { margin-bottom: 16px; font-size: 1rem; }
+  .about-text p:last-of-type { margin-bottom: 26px; }
+  .diff-list { display: grid; grid-template-columns: 1fr; gap: 12px; }
+  .diff-item { display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem; color: var(--ink); font-weight: 500; }
+  .diff-item .icon { width: 18px; height: 18px; color: var(--brand); flex-shrink: 0; margin-top: 2px; }
+
+  /* ============ GALLERY ============ */
+  .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; grid-auto-rows: 140px; }
+  .gallery-item { border-radius: var(--radius-sm); overflow: hidden; position: relative; }
+  .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+  .gallery-item:hover img { transform: scale(1.06); }
+  .gallery-item.tall { grid-row: span 2; }
+  .gallery-item.wide { grid-column: span 2; }
+
+  /* ============ TESTIMONIALS ============ */
+  .testimonial-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+  .testimonial-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-md);
+    padding: 26px; display: flex; flex-direction: column; gap: 14px;
+  }
+  .stars { display: flex; gap: 4px; color: var(--gold); }
+  .stars .icon { width: 17px; height: 17px; }
+  .testimonial-card p { color: var(--ink); font-size: 0.98rem; font-style: italic; }
+  .testimonial-who { display: flex; flex-direction: column; margin-top: auto; }
+  .testimonial-name { font-weight: 700; font-size: 0.95rem; color: var(--ink); }
+  .testimonial-loc { font-size: 0.82rem; color: var(--ink-muted); }
+
+  /* ============ PRICING ============ */
+  .pricing-groups { display: grid; grid-template-columns: 1fr; gap: 36px; }
+  .pricing-group-title {
+    font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700;
+    color: var(--brand); margin-bottom: 16px; display: flex; align-items: center; gap: 10px;
+  }
+  .pricing-group-title::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+  .pricing-row {
+    display: flex; align-items: baseline; gap: 10px; padding: 12px 0; border-bottom: 1px dashed var(--border);
+  }
+  .pricing-row:last-child { border-bottom: none; }
+  .pricing-name { font-weight: 600; font-size: 0.98rem; }
+  .pricing-leader { flex: 1; border-bottom: 1px dotted var(--border); transform: translateY(-4px); }
+  .pricing-amount { font-family: var(--font-display); font-weight: 700; color: var(--brand); font-size: 1.02rem; white-space: nowrap; }
+  .pricing-note { margin-top: 30px; font-size: 0.88rem; padding: 16px 18px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-md); }
+
+  /* ============ CONTACT ============ */
+  .contact { background: var(--bg-soft); }
+  .contact-grid { display: grid; grid-template-columns: 1fr; gap: 40px; }
+  .contact-methods { display: flex; flex-direction: column; gap: 16px; margin-bottom: 30px; }
+  .contact-method { display: flex; align-items: flex-start; gap: 14px; }
+  .contact-method .icon-wrap {
+    width: 40px; height: 40px; border-radius: 50%; background: var(--card); border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--brand);
+  }
+  .contact-method .icon { width: 19px; height: 19px; }
+  .contact-method .label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-muted); font-weight: 600; }
+  .contact-method .value { font-weight: 600; font-size: 1rem; }
+  .contact-method a.value:hover { color: var(--brand); }
+
+  .hours-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 22px; margin-bottom: 26px; }
+  .hours-card h4 { margin-bottom: 14px; font-family: var(--font-display); }
+  .hours-grid { display: grid; grid-template-columns: 1fr auto; gap: 10px 20px; }
+  .hours-grid .day { font-weight: 600; font-size: 0.94rem; }
+  .hours-grid .time { font-size: 0.94rem; color: var(--ink-muted); }
+  .hours-note { margin-top: 14px; font-size: 0.85rem; color: var(--brand); font-weight: 600; }
+
+  .map-frame { border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border); box-shadow: 0 20px 40px -26px var(--shadow); }
+  .map-frame iframe { width: 100%; height: 340px; border: 0; display: block; }
+
+  /* ============ FOOTER ============ */
+  .site-footer { background: var(--ink); color: #e6dcc9; padding-top: clamp(50px, 7vw, 90px); }
+  .footer-stitch { color: var(--gold); width: 100%; max-width: 320px; height: 16px; margin-bottom: 40px; }
+  .footer-top { display: grid; grid-template-columns: 1fr; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid #3a2c20; }
+  .footer-brand-name { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--bg); }
+  .footer-tagline { margin-top: 8px; font-size: 0.92rem; color: #b3a48f; max-width: 320px; }
+  .footer-links { display: flex; flex-direction: column; gap: 10px; }
+  .footer-links a { font-size: 0.94rem; color: #cfc2b0; }
+  .footer-links a:hover { color: var(--bg); }
+  .footer-col-title { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 14px; }
+  .footer-social { display: flex; gap: 10px; margin-top: 4px; }
+  .footer-social a {
+    width: 38px; height: 38px; border-radius: 50%; border: 1px solid #4a3a2c;
+    display: flex; align-items: center; justify-content: center; color: #e6dcc9;
+  }
+  .footer-social a:hover { background: var(--gold); border-color: var(--gold); color: var(--ink); }
+  .footer-cta-box { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+  .footer-cta-box p { color: #b3a48f; font-size: 0.92rem; }
+  .footer-bottom { display: flex; flex-direction: column; gap: 8px; padding: 22px 0 90px; font-size: 0.82rem; color: #8a7a67; text-align: center; }
+  .credit { font-size: 0.74rem; text-transform: lowercase; color: #6f6152; letter-spacing: 0.02em; }
+
+  /* ============ STICKY MOBILE BAR ============ */
+  .sticky-bar {
+    display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+    background: var(--card); border-top: 1px solid var(--border);
+    box-shadow: 0 -10px 24px -14px var(--shadow);
+    padding: 10px var(--pad); gap: 10px;
+  }
+  .sticky-bar .btn { flex: 1; padding: 13px 10px; }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 768px) {
+    .sticky-bar { display: flex; }
+    body { padding-bottom: 74px; }
+  }
+
+  @media (min-width: 521px) {
+    .trust-grid { grid-template-columns: repeat(4, 1fr); }
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+    .testimonial-grid { grid-template-columns: repeat(1, 1fr); }
+    .pricing-groups { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1.2fr 1fr 1fr; }
+  }
+
+  @media (min-width: 821px) {
+    .nav-links { display: flex; }
+    .header-actions .btn { display: inline-flex; }
+    .header-actions .icon-btn { display: none; }
+    .hamburger { display: none; }
+    .mobile-nav { display: none !important; }
+
+    .hero-grid { grid-template-columns: 1.05fr 0.95fr; gap: 60px; }
+    .hero-visual { margin-bottom: -80px; z-index: 5; }
+    .hero-frame { transform: rotate(2deg); }
+
+    .services-grid { grid-template-columns: repeat(4, 1fr); }
+    .service-card.featured { grid-column: span 2; }
+    .service-card.span2 { grid-column: span 2; }
+    .nudge-card { grid-column: span 2; }
+
+    .about-grid { grid-template-columns: 0.8fr 1.2fr; }
+    .about-visual { position: sticky; top: 110px; }
+
+    .testimonial-grid { grid-template-columns: repeat(3, 1fr); }
+    .pricing-groups { grid-template-columns: repeat(2, 1fr); }
+
+    .contact-grid { grid-template-columns: 1fr 1.1fr; }
+  }
+
+  @media (min-width: 1081px) {
+    .gallery-grid { grid-template-columns: repeat(4, 1fr); }
+    .hero-content { max-width: 560px; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ ICON SPRITE ============ -->
+<svg style="display:none" aria-hidden="true">
+  <defs>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><line class="icon-line" x1="4" y1="7" x2="20" y2="7"/><line class="icon-line" x1="4" y1="13" x2="20" y2="13"/><line class="icon-line" x1="4" y1="19" x2="20" y2="19"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><line class="icon-line" x1="6" y1="6" x2="18" y2="18"/><line class="icon-line" x1="18" y1="6" x2="6" y2="18"/></symbol>
+    <symbol id="icon-call" viewBox="0 0 24 24"><path class="icon-line" d="M6.6 3.5c-1 0-1.9.8-1.9 1.9 0 8 6.5 14.5 14.5 14.5 1.1 0 1.9-.9 1.9-1.9v-2.7c0-.6-.4-1.1-1-1.3l-3-1c-.5-.2-1.1 0-1.5.4l-1.1 1.3c-2.2-1.1-4-2.9-5.1-5.1l1.3-1.1c.4-.4.5-1 .4-1.5l-1-3c-.2-.6-.7-1-1.3-1H6.6Z"/></symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path class="icon-line" d="M12 3a9 9 0 0 0-7.6 13.8L3 21l4.4-1.4A9 9 0 1 0 12 3Z"/><path class="icon-line" d="M8.2 9.6c.3 3 2.6 5.3 5.6 5.6.9.1 1.7-.5 1.7-1.3 0-.1-.1-.3-.2-.4l-1.8-1.1c-.3-.2-.7-.1-.9.1l-.5.5c-1-.6-1.8-1.4-2.4-2.4l.5-.5c.2-.2.3-.6.1-.9L9.2 7.4c-.1-.1-.3-.2-.4-.2-.8 0-1.4.8-1.3 1.7Z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path class="icon-line" d="M12 21s7-7.6 7-12.5A7 7 0 0 0 5 8.5C5 13.4 12 21 12 21Z"/><circle class="icon-line" cx="12" cy="8.7" r="2.6"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle class="icon-line" cx="12" cy="12" r="8.5"/><path class="icon-line" d="M12 7.5v4.8l3.2 2"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24"><rect class="icon-line" x="3.5" y="3.5" width="17" height="17" rx="5"/><circle class="icon-line" cx="12" cy="12" r="4"/><circle cx="16.8" cy="7.2" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.9 6.5 7.1.6-5.4 4.7 1.7 7-6.3-3.9-6.3 3.9 1.7-7L2 9.6l7.1-.6L12 2.5Z"/></symbol>
+    <symbol id="icon-jacket" viewBox="0 0 24 24"><path class="icon-line" d="M8.5 3 5 6.5V21h5.5v-9L12 14l1.5-2v9H19V6.5L15.5 3l-3.5 2.8L8.5 3Z"/><circle cx="12" cy="13.5" r="0.9" fill="currentColor"/></symbol>
+    <symbol id="icon-vest" viewBox="0 0 24 24"><path class="icon-line" d="M9 3 6.5 5.5V21H10V10l2 3 2-3v11h3.5V5.5L15 3l-3 3.2L9 3Z"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/><circle cx="12" cy="16" r="0.8" fill="currentColor"/></symbol>
+    <symbol id="icon-buttons" viewBox="0 0 24 24"><path class="icon-line" d="M7 4 4.5 6.5V20h15V6.5L17 4"/><circle cx="9" cy="8" r="0.9" fill="currentColor"/><circle cx="9" cy="12.5" r="0.9" fill="currentColor"/><circle cx="9" cy="17" r="0.9" fill="currentColor"/><circle cx="15" cy="8" r="0.9" fill="currentColor"/><circle cx="15" cy="12.5" r="0.9" fill="currentColor"/><circle cx="15" cy="17" r="0.9" fill="currentColor"/></symbol>
+    <symbol id="icon-trousers" viewBox="0 0 24 24"><path class="icon-line" d="M6 3h12l.7 4-1.6 14h-2.6L13.5 9 12 21H9.5L8 9 5.3 7Z"/></symbol>
+    <symbol id="icon-scissors" viewBox="0 0 24 24"><circle class="icon-line" cx="6" cy="6.5" r="2.2"/><circle class="icon-line" cx="6" cy="17.5" r="2.2"/><line class="icon-line" x1="7.7" y1="7.9" x2="19" y2="16.5"/><line class="icon-line" x1="7.7" y1="16.1" x2="19" y2="7.5"/></symbol>
+    <symbol id="icon-tape" viewBox="0 0 24 24"><rect class="icon-line" x="3.5" y="8" width="17" height="8" rx="2"/><line class="icon-line" x1="7" y1="8" x2="7" y2="12"/><line class="icon-line" x1="10.5" y1="8" x2="10.5" y2="12"/><line class="icon-line" x1="14" y1="8" x2="14" y2="12"/><line class="icon-line" x1="17.5" y1="8" x2="17.5" y2="12"/></symbol>
+    <symbol id="icon-thread" viewBox="0 0 24 24"><ellipse class="icon-line" cx="12" cy="6" rx="6" ry="2.2"/><ellipse class="icon-line" cx="12" cy="18" rx="6" ry="2.2"/><line class="icon-line" x1="6" y1="6" x2="6" y2="18"/><line class="icon-line" x1="18" y1="6" x2="18" y2="18"/><line class="icon-line" x1="7.5" y1="7.5" x2="16.5" y2="16.5"/><line class="icon-line" x1="7.5" y1="16.5" x2="16.5" y2="7.5"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#main" aria-label="Tailor Point home">
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="18" fill="var(--brand)"/>
+        <path d="M11 23 Q20 9 29 17" stroke="var(--bg)" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <circle cx="29" cy="17" r="2" fill="var(--gold)"/>
+        <path d="M9 27 Q20 35 31 25" stroke="var(--gold)" stroke-width="1.4" fill="none" stroke-dasharray="1.5 3.5" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">Tailor Point</span>
+        <span class="brand-sub">Sonipat · Est. 2011</span>
+      </span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="icon-btn call" href="tel:+919813391987" aria-label="Call Tailor Point">
+        <svg class="icon"><use href="#icon-call"/></svg>
+      </a>
+      <a class="icon-btn wa" href="https://wa.me/919813391987?text=Hi%20Tailor%20Point%2C%20I%20have%20a%20query%20about%20your%20tailoring%20services." target="_blank" rel="noopener" aria-label="Message Tailor Point on WhatsApp">
+        <svg class="icon"><use href="#icon-whatsapp"/></svg>
+      </a>
+      <a class="btn btn-outline btn-sm" href="tel:+919813391987">
+        <svg class="icon"><use href="#icon-call"/></svg> Call
+      </a>
+      <a class="btn btn-whatsapp btn-sm" href="https://wa.me/919813391987?text=Hi%20Tailor%20Point%2C%20I%20have%20a%20query%20about%20your%20tailoring%20services." target="_blank" rel="noopener">
+        <svg class="icon"><use href="#icon-whatsapp"/></svg> WhatsApp
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg class="icon icon-menu"><use href="#icon-menu"/></svg>
+        <svg class="icon icon-close"><use href="#icon-close"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+    <div class="mobile-cta">
+      <a class="btn btn-outline btn-sm" href="tel:+919813391987"><svg class="icon"><use href="#icon-call"/></svg>Call</a>
+      <a class="btn btn-whatsapp btn-sm" href="https://wa.me/919813391987?text=Hi%20Tailor%20Point%2C%20I%20have%20a%20query%20about%20your%20tailoring%20services." target="_blank" rel="noopener"><svg class="icon"><use href="#icon-whatsapp"/></svg>WhatsApp</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="eyebrow">Custom Men's Tailoring, Gohana Road</span>
+        <h1 class="hero-title">Custom Suits Crafted for <span class="accent">Perfect Fit</span> and Style</h1>
+        <p class="hero-value">Every suit is measured, cut and finished by hand for a fit that speaks before you do.</p>
+        <span class="hero-proof">
+          <svg class="icon"><use href="#icon-star"/></svg>
+          1,200+ suits stitched for Sonipat's grooms, officers and professionals since 2011
+        </span>
+        <div class="hero-ctas">
+          <a class="btn btn-whatsapp" href="https://wa.me/919813391987?text=Hi%20Tailor%20Point!%20I%20want%20to%20get%20a%20suit%20custom%20stitched.%20Please%20share%20fabric%20options%20and%20pricing." target="_blank" rel="noopener">
+            <svg class="icon"><use href="#icon-whatsapp"/></svg> Chat on WhatsApp
+          </a>
+          <a class="btn btn-outline" href="tel:+919813391987">
+            <svg class="icon"><use href="#icon-call"/></svg> Call Now
+          </a>
+        </div>
+        <div class="hero-micro">
+          <svg class="icon"><use href="#icon-clock"/></svg>
+          Open today, 10:00 AM – 8:00 PM · Gohana Road, Sonipat
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-frame">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&auto=format&fit=crop" alt="Sharply tailored formal suit, the Tailor Point signature fit" loading="lazy">
+          <div class="hero-badge">Since<span>2011</span></div>
+        </div>
+        <svg class="tape-ribbon" viewBox="0 0 400 26" preserveAspectRatio="none" aria-hidden="true">
+          <rect width="400" height="26" fill="var(--card)"/>
+          <g stroke="var(--brand)" stroke-width="1.4">
+            <line x1="0" y1="26" x2="400" y2="26" stroke="var(--border)" stroke-width="2"/>
+            <line x1="10" y1="6" x2="10" y2="20"/><line x1="30" y1="12" x2="30" y2="20"/>
+            <line x1="50" y1="6" x2="50" y2="20"/><line x1="70" y1="12" x2="70" y2="20"/>
+            <line x1="90" y1="6" x2="90" y2="20"/><line x1="110" y1="12" x2="110" y2="20"/>
+            <line x1="130" y1="6" x2="130" y2="20"/><line x1="150" y1="12" x2="150" y2="20"/>
+            <line x1="170" y1="6" x2="170" y2="20"/><line x1="190" y1="12" x2="190" y2="20"/>
+            <line x1="210" y1="6" x2="210" y2="20"/><line x1="230" y1="12" x2="230" y2="20"/>
+            <line x1="250" y1="6" x2="250" y2="20"/><line x1="270" y1="12" x2="270" y2="20"/>
+            <line x1="290" y1="6" x2="290" y2="20"/><line x1="310" y1="12" x2="310" y2="20"/>
+            <line x1="330" y1="6" x2="330" y2="20"/><line x1="350" y1="12" x2="350" y2="20"/>
+            <line x1="370" y1="6" x2="370" y2="20"/><line x1="390" y1="12" x2="390" y2="20"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section class="trust-strip">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-card"><div class="trust-num">15+</div><div class="trust-label">Years of Tailoring</div></div>
+        <div class="trust-card"><div class="trust-num">1,200+</div><div class="trust-label">Suits Delivered</div></div>
+        <div class="trust-card"><div class="trust-num">100%</div><div class="trust-label">Made-to-Measure</div></div>
+        <div class="trust-card"><div class="trust-num">2nd</div><div class="trust-label">Generation Tailors</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services">
+    <div class="container">
+      <svg class="stitch-divider" viewBox="0 0 400 20" aria-hidden="true">
+        <defs><pattern id="stitch1" width="24" height="20" patternUnits="userSpaceOnUse">
+          <line x1="4" y1="4" x2="12" y2="16"/><line x1="16" y1="4" x2="24" y2="16"/>
+        </pattern></defs>
+        <rect width="400" height="20" fill="url(#stitch1)"/>
+      </svg>
+      <div class="section-head">
+        <span class="eyebrow">Our Work</span>
+        <h2>Suits, Waistcoats &amp; Trousers, Stitched to Order</h2>
+        <p>Nothing off the rack. Every piece below starts with your own measurements — here's what we make, and what it costs to get started.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card featured">
+          <div class="card-icon"><svg class="icon"><use href="#icon-jacket"/></svg></div>
+          <h3>Custom 2-Piece Suit</h3>
+          <p>Hand-cut jacket and trouser, tailored to your exact shoulder, chest and waist measurements — our most-ordered piece.</p>
+          <div class="card-price">₹4,500 onwards</div>
+          <a class="btn btn-whatsapp btn-sm" href="https://wa.me/919813391987?text=Hi%20Tailor%20Point%2C%20I%27m%20interested%20in%20a%20custom%202-piece%20suit.%20Please%20share%20fabric%20options%20and%20price." target="_blank" rel="noopener"><svg class="icon"><use href="#icon-whatsapp"/></svg>Enquire</a>
+        </article>
+
+        <article class="service-card">
+          <div class="card-icon"><svg class="icon"><use href="#icon-vest"/></svg></div>
+          <h3>3-Piece Suit with Waistcoat</h3>
+          <p>Jacket, trouser and matching waistcoat — the classic choice for weddings and engagements.</p>
+          <div class="card-price">₹6,500 onwards</div>
+          <a class="btn btn-whatsapp btn-sm" href="https://wa.me/919813391987?text=Hi%20Tailor%20Point%2C%20I%27d%20like%20to%20enquire%20about%20a%203-piece%20suit%20with%20waistcoat.%20Please%20share%20details." target="_blank" rel="noopener"><svg class="icon"><use href="#icon-whatsapp"/></svg>Enquire</a>
+        </article>
+
+        <article class="service-card">
+          <div class="card-icon"><svg class="icon"><use href="#icon-buttons"/></svg></div>
+          <h3>Double-Breasted Suit</h3>
+          <p>A structured, formal silhouette with a six-button front, cut for a sharper, bolder line.</p>
+          <div class="card-price">₹5,500 onwards</div>
+          <a class="btn btn-whatsapp btn-sm" href="https://wa.me/919813391987?text=Hi%20Tailor%20Point%2C%20I%20want%20a%20double-breasted%20suit%20stitched.%20Please%20share%20fabric%20and%20price%20details." target="_blank" rel="noopener"><svg class="icon"><use href="#icon-whatsapp"/></svg>Enquire</a>
+        </article>
+
+        <article class="service-card">
+          <div class="card-icon"><svg class="icon"><use href="#icon-vest"/></svg></div>
+          <h3>Formal Waistcoat</h3>
+          <p>Stitched separately to pair with an existing suit, or worn on its own for office wear.</p>
+          <div class="card-price">₹1,200 onwards</div>
+          <a class="btn btn-whatsapp btn-sm" href="https://wa.me/919813391987?text=Hi%20Tailor%20Point%2C%20I%20need%20a%20formal%20waistcoat%20stitched.%20Please%20share%20price%20and%20fabric%20options." target="_blank" rel="noopener"><svg class="icon"><use href="#icon-whatsapp"/></svg>Enquire</a>
+        </article>
+
+        <article class="service-card">
+          <div class="card-icon"><svg class="icon"><use href="#icon-trousers"/></svg></div>
+          <h3>Custom Trousers</h3>
+          <p>Formal or semi-formal trousers with a clean break, stitched to your waist and length.</p>
+          <div class="card-price">₹900 onwards</div>
+          <a class="btn btn-whatsapp btn-sm" href="https://wa.me/919813391987?text=Hi%20Tailor%20Point%2C%20I%27d%20like%20custom%20trousers%20stitched.%20Please%20share%20price%20details." target="_blank" rel="noopener"><svg class="icon"><use href="#icon-whatsapp"/></svg>Enquire</a>
+        </article>
+
+        <article class="service-card">
+          <div class="card-icon"><svg class="icon"><use href="#icon-scissors"/></svg></div>
+          <h3>Suit Alteration &amp; Repair</h3>
+          <p>Hemming, waist adjustment or lining repair — on suits stitched anywhere, not just by us.</p>
+          <div class="card-price">₹300 onwards</div>
+          <a class="btn btn-whatsapp btn-sm" href="https://wa.me/919813391987?text=Hi%20Tailor%20Point%2C%20I%20need%20alteration%20for%20my%20suit.%20Please%20share%20timing%20and%20charges." target="_blank" rel="noopener"><svg class="icon"><use href="#icon-whatsapp"/></svg>Enquire</a>
+        </article>
+
+        <article class="service-card">
+          <div class="card-icon"><svg class="icon"><use href="#icon-tape"/></svg></div>
+          <h3>Personalized Fitting Session</h3>
+          <p>A one-on-one measurement sitting before any fabric is cut, so nothing is ever guessed.</p>
+          <div class="card-price">Free with any order</div>
+          <a class="btn btn-whatsapp btn-sm" href="https://wa.me/919813391987?text=Hi%20Tailor%20Point%2C%20I%27d%20like%20to%20book%20a%20personalized%20fitting%20appointment.%20Please%20suggest%20a%20time." target="_blank" rel="noopener"><svg class="icon"><use href="#icon-whatsapp"/></svg>Enquire</a>
+        </article>
+
+        <article class="service-card">
+          <div class="card-icon"><svg class="icon"><use href="#icon-thread"/></svg></div>
+          <h3>Premium Fabric Stitching</h3>
+          <p>Bring your own fabric and we handle the cutting and stitching with the same care.</p>
+          <div class="card-price">₹2,500 onwards</div>
+          <a class="btn btn-whatsapp btn-sm" href="https://wa.me/919813391987?text=Hi%20Tailor%20Point%2C%20I%20have%20my%20own%20fabric%20and%20want%20stitching%20only.%20Please%20share%20charges." target="_blank" rel="noopener"><svg class="icon"><use href="#icon-whatsapp"/></svg>Enquire</a>
+        </article>
+
+        <div class="nudge-card">
+          <h3>Not sure which suit is right for the occasion?</h3>
+          <p>Tell us the event and the date on WhatsApp — Md Alam will suggest the fit, fabric and style himself.</p>
+          <a class="btn btn-whatsapp btn-sm" href="https://wa.me/919813391987?text=Hi%20Tailor%20Point%2C%20I%20need%20help%20choosing%20the%20right%20suit%20for%20an%20occasion.%20Can%20you%20guide%20me%3F" target="_blank" rel="noopener"><svg class="icon"><use href="#icon-whatsapp"/></svg>Ask Md Alam</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <svg class="about-watermark" viewBox="0 0 200 200" aria-hidden="true">
+          <circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" stroke-width="1"/>
+          <circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 6"/>
+        </svg>
+        <div class="avatar-circle">MA</div>
+        <div class="about-name">Md Alam</div>
+        <div class="about-role">Owner &amp; Master Tailor</div>
+      </div>
+      <div class="about-text">
+        <span class="eyebrow">Our Story</span>
+        <p>Mere father ne 1980s ke aakhir mein Begusarai, Bihar mein ek chhota sa tailoring stall shuru kiya tha. Bachpan se hi main unke saath rehta tha — school ke baad kaafi waqt wahi guzarta, floor se pins uthata, machine mein dhaga daalna seekhta aur dheere-dheere tailoring ki duniya ko samajhne laga. Sach kahun toh bicycle chalana seekhne se pehle maine sewing machine mein dhaga daalna seekh liya tha.
+        
+        Jab main 16 saal ka hua, father ne mujhe customers ki trousers ki hemming jaise chhote kaam dene shuru kar diye. Aur agar crease bilkul seedhi nahi hoti thi, toh uski correction sirf shop par nahi, dinner table par bhi hoti thi. 😄
+        
+        2011 mein maine Gohana Road, Sonipat par Tailor Point ki shuruaat ki — sirf do machines aur ek simple principle ke saath: har suit us insaan ke liye tailor hona chahiye jo use pehnega, na ki sirf kisi size chart ke hisaab se.</p>
+        
+        <p>Aaj 15 saal se zyada ho gaye hain. Hum 1,000 se bhi zyada suits stitch kar chuke hain aur shop bhi pehle se kaafi grow ho gayi hai. Lekin ek cheez aaj bhi bilkul nahi badli — perfect fit ke liye hamari commitment.
+        
+        Mera maanna hai ki ek achha suit woh hota hai jo pehli baar pehenne par hi naturally fit lage — jisme baar-baar adjustment ki zarurat na pade.
+          
+        Ye wahi standard hai jo mere father ne mujhe sikhaya tha. Aaj bhi har customer, har measurement aur har order ke saath main usi standard ko follow karta hoon. Tailor Point — jahan har suit sirf stitch nahi hota, aapke liye tailor kiya jata hai.</p>
+
+        <div class="diff-list">
+          <div class="diff-item"><svg class="icon"><use href="#icon-scissors"/></svg>Every suit hand-cut and finished by me personally — no outsourced stitching</div>
+          <div class="diff-item"><svg class="icon"><use href="#icon-thread"/></svg>Fabric sourced directly from Ludhiana and Bhiwandi mills each season</div>
+          <div class="diff-item"><svg class="icon"><use href="#icon-tape"/></svg>The same tailor measures, cuts and fits your suit from start to finish</div>
+          <div class="diff-item"><svg class="icon"><use href="#icon-jacket"/></svg>Free first alteration within 15 days of delivery</div>
+          <div class="diff-item"><svg class="icon"><use href="#icon-clock"/></svg>Delivery dates are fixed at booking and kept — weddings don't wait</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Inside the Shop</span>
+        <h2>A Look at the Craft</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item tall"><img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?w=800&auto=format&fit=crop" alt="Navy suit fitting session at Tailor Point" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&auto=format&fit=crop" alt="Wall of premium suiting fabric rolls" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1487222476894-8944e59f22d8?w=800&auto=format&fit=crop" alt="Hand-stitched lapel and tie detail on a formal jacket" loading="lazy"></div>
+        <div class="gallery-item wide"><img src="https://images.unsplash.com/photo-1611601322175-ef8e5fb56c6c?w=800&auto=format&fit=crop" alt="Camel double-breasted suit on display" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=800&auto=format&fit=crop" alt="Master tailor stitching at the machine" loading="lazy"></div>
+        <div class="gallery-item tall"><img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0?w=800&auto=format&fit=crop" alt="Finished suits ready for customer delivery" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&auto=format&fit=crop" alt="Close-up of waistcoat and button detailing" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&auto=format&fit=crop" alt="Trouser measurement and stitching in progress" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section id="testimonials">
+    <div class="container">
+      <svg class="stitch-divider center" viewBox="0 0 400 20" aria-hidden="true">
+        <rect width="400" height="20" fill="url(#stitch1)"/>
+      </svg>
+      <div class="section-head center">
+        <span class="eyebrow">What People Say</span>
+        <h2>From the Neighbourhood</h2>
+      </div>
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <div class="stars">
+            <svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg>
+          </div>
+          <p>"Apni shaadi ke liye yahan sherwani-suit combo stitch karwaya tha. Alam bhai ne final stitching se pehle shoulder line teen baar check ki — aisi patience aur detailing aajkal bahut kam dekhne ko milti hai.."</p>
+          <div class="testimonial-who">
+            <span class="testimonial-name">Rohit Malik</span>
+            <span class="testimonial-loc">Model Town, Sonipat</span>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <div class="stars">
+            <svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg>
+          </div>
+          <p>"Apne bete ki engagement ke liye 3-piece suit order kiya tha aur date se do din pehle hi ready mil gaya, bilkul jaisa promise kiya tha. Fabric bhi kaafi premium laga, usual rental-shop quality jaisa bilkul nahi."</p>
+          <div class="testimonial-who">
+            <span class="testimonial-name">Suresh Kumar</span>
+            <span class="testimonial-loc">Kutani Road, Sonipat</span>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <div class="stars">
+            <svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg>
+          </div>
+          <p>"Main pichhle teen saal se apne office blazers ki alterations yahin se karwata hoon. Subah blazer drop karo aur shaam tak perfect fitting ke saath mil jata hai — har baar same quality aur fitting."</p>
+          <div class="testimonial-who">
+            <span class="testimonial-name">Amit Chaudhary</span>
+            <span class="testimonial-loc">Subhash Chowk, Sonipat</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section id="pricing" class="trust-strip">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Transparent Pricing</span>
+        <h2>What It Costs to Get Started</h2>
+        <p>No hidden charges, no confusing tiers — just what each piece costs, before fabric.</p>
+      </div>
+
+      <div class="pricing-groups">
+        <div class="pricing-group">
+          <div class="pricing-group-title">Suits</div>
+          <div class="pricing-row"><span class="pricing-name">Custom 2-Piece Suit</span><span class="pricing-leader"></span><span class="pricing-amount">₹4,500 onwards</span></div>
+          <div class="pricing-row"><span class="pricing-name">3-Piece Suit with Waistcoat</span><span class="pricing-leader"></span><span class="pricing-amount">₹6,500 onwards</span></div>
+          <div class="pricing-row"><span class="pricing-name">Double-Breasted Suit</span><span class="pricing-leader"></span><span class="pricing-amount">₹5,500 onwards</span></div>
+        </div>
+        <div class="pricing-group">
+          <div class="pricing-group-title">Waistcoats &amp; Trousers</div>
+          <div class="pricing-row"><span class="pricing-name">Formal Waistcoat (separate)</span><span class="pricing-leader"></span><span class="pricing-amount">₹1,200 onwards</span></div>
+          <div class="pricing-row"><span class="pricing-name">Custom Trousers</span><span class="pricing-leader"></span><span class="pricing-amount">₹900 onwards</span></div>
+        </div>
+        <div class="pricing-group">
+          <div class="pricing-group-title">Fitting &amp; Alterations</div>
+          <div class="pricing-row"><span class="pricing-name">Personalized Fitting Session</span><span class="pricing-leader"></span><span class="pricing-amount">Complimentary</span></div>
+          <div class="pricing-row"><span class="pricing-name">Suit Alteration / Repair</span><span class="pricing-leader"></span><span class="pricing-amount">₹300 onwards</span></div>
+          <div class="pricing-row"><span class="pricing-name">Stitching Only (your fabric)</span><span class="pricing-leader"></span><span class="pricing-amount">₹2,500 onwards</span></div>
+        </div>
+      </div>
+
+      <p class="pricing-note">Prices vary with fabric choice and detailing — functional buttonholes, contrast lining, monogramming. The final quote is confirmed at your fitting, before any fabric is cut.</p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="eyebrow">Visit or Reach Out</span>
+        <h2>Come In for a Fitting</h2>
+
+        <div class="contact-methods" style="margin-top: 26px;">
+          <div class="contact-method">
+            <span class="icon-wrap"><svg class="icon"><use href="#icon-pin"/></svg></span>
+            <div>
+              <span class="label">Address</span><br>
+              <a class="value" href="https://www.google.com/maps/search/?api=1&query=Tailor%20Point%2C%20Gohana%20Road%2C%20Sonipat%2C%20Haryana" target="_blank" rel="noopener">Tailor Point, Gohana Road, Sonipat, Haryana</a>
+            </div>
+          </div>
+          <div class="contact-method">
+            <span class="icon-wrap"><svg class="icon"><use href="#icon-call"/></svg></span>
+            <div>
+              <span class="label">Phone</span><br>
+              <a class="value" href="tel:+919813391987">+91 98133 91987</a>
+            </div>
+          </div>
+          <div class="contact-method">
+            <span class="icon-wrap"><svg class="icon"><use href="#icon-whatsapp"/></svg></span>
+            <div>
+              <span class="label">WhatsApp</span><br>
+              <a class="value" href="https://wa.me/919813391987?text=Hi%20Tailor%20Point%2C%20I%27d%20like%20to%20visit%20your%20shop%20on%20Gohana%20Road.%20Could%20you%20share%20the%20best%20time%20to%20come%3F" target="_blank" rel="noopener">+91 98133 91987</a>
+            </div>
+          </div>
+          <div class="contact-method">
+            <span class="icon-wrap"><svg class="icon"><use href="#icon-instagram"/></svg></span>
+            <div>
+              <span class="label">Instagram</span><br>
+              <a class="value" href="https://www.instagram.com/tailor_point_sonipat/" target="_blank" rel="noopener">@tailor_point_sonipat</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hours-card">
+          <h4>Shop Hours</h4>
+          <div class="hours-grid">
+            <span class="day">Monday – Saturday</span><span class="time">10:00 AM – 8:00 PM</span>
+            <span class="day">Sunday</span><span class="time">10:00 AM – 8:00 PM</span>
+          </div>
+          <div class="hours-note">Open all 7 days · Fittings recommended by appointment</div>
+        </div>
+
+        <a class="btn btn-whatsapp btn-block" href="https://wa.me/919813391987?text=Hi%20Tailor%20Point%2C%20I%27d%20like%20to%20visit%20your%20shop%20on%20Gohana%20Road.%20Could%20you%20share%20the%20best%20time%20to%20come%3F" target="_blank" rel="noopener">
+          <svg class="icon"><use href="#icon-whatsapp"/></svg> Plan Your Visit on WhatsApp
+        </a>
+      </div>
+
+      <div class="map-frame">
+        <iframe src="https://maps.google.com/maps?q=Tailor%20Point%2C%20Gohana%20Road%2C%20Sonipat%2C%20Haryana&output=embed" loading="lazy" title="Tailor Point location on Gohana Road, Sonipat" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <svg class="footer-stitch" viewBox="0 0 400 20" aria-hidden="true">
+      <defs><pattern id="stitch2" width="24" height="20" patternUnits="userSpaceOnUse">
+        <line x1="4" y1="4" x2="12" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line x1="16" y1="4" x2="24" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </pattern></defs>
+      <rect width="400" height="20" fill="url(#stitch2)"/>
+    </svg>
+
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name">Tailor Point</div>
+        <p class="footer-tagline">Custom suits crafted for perfect fit and style, on Gohana Road, Sonipat since 2011.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/tailor_point_sonipat/" target="_blank" rel="noopener" aria-label="Tailor Point on Instagram"><svg class="icon"><use href="#icon-instagram"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-cta-box">
+        <div class="footer-col-title">Ready When You Are</div>
+        <p>Tell us the occasion and the date — we'll take it from there.</p>
+        <a class="btn btn-whatsapp btn-block" href="https://wa.me/919813391987?text=Hi%20Tailor%20Point%2C%20I%20found%20your%20website%20and%20would%20like%20to%20know%20more%20about%20custom%20suits." target="_blank" rel="noopener">
+          <svg class="icon"><use href="#icon-whatsapp"/></svg> Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© <span id="year"></span> Tailor Point, Gohana Road, Sonipat. All rights reserved.</div>
+      <div class="credit">built with ❤️ by raashid-hussain</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE BAR ============ -->
+<div class="sticky-bar" role="region" aria-label="Quick contact">
+  <a class="btn btn-outline" href="tel:+919813391987">
+    <svg class="icon"><use href="#icon-call"/></svg> Call
+  </a>
+  <a class="btn btn-whatsapp" href="https://wa.me/919813391987?text=Hi%20Tailor%20Point%2C%20I%27m%20interested%20in%20getting%20a%20suit%20stitched.%20Please%20share%20more%20details." target="_blank" rel="noopener">
+    <svg class="icon"><use href="#icon-whatsapp"/></svg> WhatsApp
+  </a>
+</div>
+
+<script>
+  (function () {
+    var hamburger = document.getElementById('hamburger');
+    var mobileNav = document.getElementById('mobile-nav');
+
+    hamburger.addEventListener('click', function () {
+      var isOpen = mobileNav.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      hamburger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    });
+
+    mobileNav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        mobileNav.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.setAttribute('aria-label', 'Open menu');
+      });
+    });
+
+    var header = document.getElementById('site-header');
+    window.addEventListener('scroll', function () {
+      header.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+
+    var yearEl = document.getElementById('year');
+    if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
+  })();
+</script>
+</body>
+</html>
